@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+:root {
+  --color-pnd-dark: #0B132B;
+  --color-pnd-navy: #152238;
+  --color-pnd-terracotta: #D96B27;
+  --color-pnd-amber: #F59E0B;
+  --color-pnd-teal: #0D9488;
+  --color-pnd-emerald: #10B981;
+  --color-pnd-bg: #F8FAFC;
+  --color-pnd-surface: #FFFFFF;
+  --color-pnd-border: #E2E8F0;
+  --color-pnd-text: #0F172A;
+  --color-pnd-muted: #64748B;
+}
+
+@theme {
+  --color-pnd-dark: #0B132B;
+  --color-pnd-navy: #152238;
+  --color-pnd-terracotta: #D96B27;
+  --color-pnd-amber: #F59E0B;
+  --color-pnd-teal: #0D9488;
+  --color-pnd-emerald: #10B981;
+  --color-pnd-bg: #F8FAFC;
+  --color-pnd-surface: #FFFFFF;
+  --color-pnd-border: #E2E8F0;
+  --color-pnd-text: #0F172A;
+  --color-pnd-muted: #64748B;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0B132B;
+  color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Section background variations */
+.section-dark {
+  background-color: #0B132B;
+  color: #F8FAFC;
+}
+
+.section-light {
+  background-color: #FFFFFF;
+  color: #0F172A;
+}
+
+.section-soft-light {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+/* Background patterns with subtle African geometric touch */
+.african-pattern-light {
+  background-image:
+    radial-gradient(rgba(217, 107, 39, 0.1) 1.5px, transparent 1.5px),
+    radial-gradient(rgba(11, 19, 43, 0.05) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.african-pattern-dark {
+  background-image:
+    radial-gradient(rgba(217, 107, 39, 0.15) 1.5px, transparent 1.5px),
+    radial-gradient(rgba(13, 148, 136, 0.1) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.glow-orange {
+  box-shadow: 0 0 40px -10px rgba(217, 107, 39, 0.3);
+}
+
+.glow-teal {
+  box-shadow: 0 0 40px -10px rgba(13, 148, 136, 0.3);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-card-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}

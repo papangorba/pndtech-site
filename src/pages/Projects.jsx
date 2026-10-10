@@ -20,17 +20,17 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: 'Plateforme E-Commerce Magentale Bpa',
+      title: 'Plateforme E-Commerce Magentalabpa',
       category: 'Web & SaaS',
-      client: 'magentalebpa.com',
-      url: 'https://magentalebpa.com',
-      description: 'Conception et déploiement du site & portail e-commerce Magentale Bpa. Catalogue interactif, parcours d\'achat optimisé et intégration de moyens de paiement.',
+      client: 'magentalabpa.com',
+      url: 'https://magentalabpa.com',
+      description: 'Conception et déploiement du site et du portail du laboratoire Magentalabpa, situé en Pennsylvanie (États-Unis). Catalogue interactif, parcours d\'achat optimisé et intégration de moyens de paiement.',
       tech: ['Next.js', 'TypeScript', 'Node.js', 'Paiement en ligne'],
-      impact: 'Digitalisation des ventes et automatisation des commandes'
+      impact: 'Digitalisation des rendez-vous et catalogue des tests'
     },
     {
       id: 3,
-      title: 'Plateforme AutoDépannage & Garages',
+      title: 'Plateforme AutoDépannage ',
       category: 'Solutions Métier',
       client: 'Secteur Automobile & Dépannage',
       url: null,
@@ -40,12 +40,12 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: 'Solution de Transport B2B & Flottes',
+      title: 'Solution de Transport Ñu Demm & Flottes',
       category: 'Mobile',
       client: 'Secteur Transport & Mobilité',
       url: null,
       description: 'Inspiré des retours d\'expérience Ñu Demm / Bokko Demm. Outil métier d\'optimisation de flottes de véhicules, billetterie et suivi des trajets interurbains.',
-      tech: ['React Native', 'Python', 'Webhooks', 'GPS Tracking'],
+      tech: ['Flutter', 'Spring-boot', 'openmapstreet', 'GPS Tracking'],
       impact: 'Réduction des coûts opérationnels et suivi précis de la flotte'
     }
   ]

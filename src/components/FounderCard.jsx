@@ -68,8 +68,8 @@ export default function FounderCard({ variant = 'dark' }) {
 
         <div className="flex items-center justify-center sm:justify-start gap-2">
           <Mail className="w-4 h-4 text-amber-500 shrink-0" />
-          <a href="mailto:papadiawdia@gmail.com" className="hover:text-amber-500 transition-colors font-medium">
-            papadiawdia@gmail.com
+          <a href="mailto:contact@pndtech-sn.com" className="hover:text-amber-500 transition-colors font-medium">
+            contact@pndtech-sn.com
           </a>
         </div>
 

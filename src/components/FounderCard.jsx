@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, MessageSquare, ShieldCheck, Award } from 'lucide-react'
+import { MapPin, Mail, Phone, MessageSquare, ShieldCheck, Award, FileDown } from 'lucide-react'
 import papaPhoto from '../assets/papa-diaw-dia.jpg'
 
 export default function FounderCard({ variant = 'dark' }) {
@@ -93,8 +93,8 @@ export default function FounderCard({ variant = 'dark' }) {
         </div>
       </div>
 
-      {/* Action Button */}
-      <div className={`pt-4 border-t ${isLight ? 'border-slate-100' : 'border-slate-800'}`}>
+      {/* Action Buttons : discussion WhatsApp + CV (PDF dans public/) */}
+      <div className={`pt-4 border-t flex flex-col sm:flex-row items-center justify-center gap-3 ${isLight ? 'border-slate-100' : 'border-slate-800'}`}>
         <a
           href="https://wa.me/221772995725"
           target="_blank"
@@ -103,6 +103,20 @@ export default function FounderCard({ variant = 'dark' }) {
         >
           <MessageSquare className="w-4 h-4" />
           <span>Discuter avec Papa Ngorba DIA</span>
+        </a>
+        <a
+          href="/cv-papa-ngorba-dia.pdf"
+          target="_blank"
+          rel="noreferrer"
+          download="CV-Papa-Ngorba-DIA.pdf"
+          className={`inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl font-bold text-xs sm:text-sm border transition-all ${
+            isLight
+              ? 'border-slate-300 text-slate-800 hover:border-amber-500 hover:text-amber-600'
+              : 'border-slate-700 text-white hover:border-amber-500 hover:text-amber-400'
+          }`}
+        >
+          <FileDown className="w-4 h-4" />
+          <span>Télécharger mon CV</span>
         </a>
       </div>
 

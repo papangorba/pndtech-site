@@ -40,13 +40,37 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: 'Solution de Transport Ñu Demm & Flottes',
+      title: 'Ñu Demm — Mobilité & livraison au Sénégal',
       category: 'Mobile',
-      client: 'Secteur Transport & Mobilité',
+      client: 'Produit PndTech · Android & iOS',
       url: null,
-      description: 'Inspiré des retours d\'expérience Ñu Demm / Bokko Demm. Outil métier d\'optimisation de flottes de véhicules, billetterie et suivi des trajets interurbains.',
-      tech: ['Flutter', 'Spring-boot', 'openmapstreet', 'GPS Tracking'],
-      impact: 'Réduction des coûts opérationnels et suivi précis de la flotte'
+      description: 'Plateforme complète de mobilité : une app client, une app chauffeur (Ñu Demm Pro), un back-office web et une API. Courses en voiture ou moto-taxi Jakarta, livraison de colis, cargo, Taxi-Bokko et trajets interurbains avec les compagnies de transport, dans les 14 régions du Sénégal.',
+      points: [
+        'Prix proposé par le client et contre-offres des chauffeurs',
+        'Suivi en direct sur la carte et sur l’écran de verrouillage',
+        'Sécurité : bouton SOS, contacts d’urgence, lien de suivi à partager',
+        'Espace SaaS pour les compagnies de transport : flotte, trajets, billets',
+        'Back-office : services par région, tarifs, documents, notifications'
+      ],
+      tech: ['Flutter', 'Spring Boot', 'PostgreSQL', 'Firebase', 'Google Maps', 'React'],
+      impact: 'Une seule app pour se déplacer, livrer et voyager partout au Sénégal'
+    },
+    {
+      id: 5,
+      title: 'Sénégal Immo — Portail immobilier',
+      category: 'Web & SaaS',
+      client: 'Produit PndTech',
+      url: null,
+      description: 'Portail de location, vente et colocation au Sénégal, réservé aux agences immobilières vérifiées. Les clients recherchent et contactent directement l’agence ; les agences gèrent leurs annonces, prospects, visites et contrats depuis leur espace.',
+      points: [
+        'Annonces relues avant publication, badge « Agence certifiée »',
+        'Recherche par ville, quartier, budget, type de bien et transaction',
+        'Espace agence : prospects par étape, agenda des visites, équipe',
+        'Contrats de bail et mandats en PDF, abonnements des agences',
+        'Administration : modération, sécurité (2FA), journal d’audit'
+      ],
+      tech: ['React', 'TypeScript', 'Spring Boot', 'Tailwind CSS', 'Vite'],
+      impact: 'Des annonces fiables et un contact direct avec des agences certifiées'
     }
   ]
 
@@ -130,6 +154,17 @@ export default function Projects() {
                 <p className="text-slate-300 text-sm leading-relaxed">
                   {p.description}
                 </p>
+
+                {p.points && (
+                  <ul className="space-y-2">
+                    {p.points.map((pt, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-xs text-slate-300">
+                        <CheckCircle className="w-4 h-4 text-teal-400 shrink-0 mt-0.5" />
+                        <span>{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
 
                 <div className="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center gap-2 text-xs text-emerald-400 font-mono">
                   <CheckCircle className="w-4 h-4 shrink-0" />

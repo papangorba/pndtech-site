@@ -79,19 +79,19 @@ export default function Products() {
       ]
     },
     {
-      id: 'pnd-immo',
+      id: 'senegal-immo',
       icon: Building,
-      name: 'PndTech Immo',
-      tagline: 'Gestion immobilière & suivi des baux locatifs',
-      status: 'En Perspective',
-      statusBg: 'bg-slate-800 text-slate-400 border-slate-700',
-      description: 'Plateforme moderne d\'automatisation de la gestion locative pour agences et bailleurs privés. Envoi d\'appels de loyers et quittances automatisées.',
-      tags: ['SaaS', 'Immobilier', 'Gestion Locative'],
+      name: 'Sénégal Immo',
+      tagline: 'Portail immobilier & logiciel pour agences',
+      status: 'Lancement Prochain',
+      statusBg: 'bg-sky-500/10 text-sky-400 border-sky-500/30',
+      description: 'Location, vente et colocation au Sénégal avec des agences vérifiées. Chaque agence dispose d’une vitrine publique et d’un espace de gestion complet pour ses annonces, ses prospects et ses contrats.',
+      tags: ['SaaS', 'Immobilier', 'Agences', 'Portail'],
       features: [
-        'Centralisation des baux, locataires & propriétaires',
-        'Génération automatique de quittances & avis d\'échéance',
-        'Rapprochement des paiements (Wave / Orange Money)',
-        'Suivi des relances & alertes impayés'
+        'Vitrine agence avec logo, WhatsApp et annonces certifiées',
+        'Suivi des prospects par étape & agenda des visites',
+        'Gestion d’équipe : invitations et rôles des agents',
+        'Contrats de bail et mandats de vente en PDF'
       ]
     }
   ]
@@ -107,7 +107,7 @@ export default function Products() {
             <span>Produits SaaS PndTech</span>
           </div>
           <h1 className="text-4xl sm:text-6xl font-extrabold text-white font-heading tracking-tight">
-            Des logiciels métiers conçus pour transformer vos secteurs d'activité.
+            Des logiciels métiers conçus pour transformer vos secteurs d’activité.
           </h1>
           <p className="text-slate-300 text-lg leading-relaxed">
             Découvrez notre gamme de solutions SaaS verticales pensées pour simplifier le quotidien des garages, écoles, salons, transporteurs et agences.
@@ -187,7 +187,7 @@ export default function Products() {
       {/* Custom Software CTA */}
       <section className="max-w-4xl mx-auto px-4 text-center">
         <div className="p-8 sm:p-12 rounded-3xl bg-slate-900 border border-slate-800 space-y-4">
-          <h3 className="text-2xl font-bold text-white font-heading">Besoin d'un SaaS métier spécifique ?</h3>
+          <h3 className="text-2xl font-bold text-white font-heading">Besoin d’un SaaS métier spécifique ?</h3>
           <p className="text-slate-300 text-sm">Nous développons des plateformes privées ou multi-locataires sur-mesure adaptées à votre marché.</p>
           <div className="pt-2">
             <Link
